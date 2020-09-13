@@ -6,7 +6,10 @@ body
   font-family: sans-sarif;
   background: url(4.jpg) no-repeat;
   background-size: cover;
-} 
+}  
+
+.b1{
+ border:2px solid #ffffff;} 
 .box
 { ;
   
@@ -15,7 +18,7 @@ body
   left: 50%;
   transform: translate(-50%,-50%); 
   color :#ffffff;
-  background:rgba(0,0,0,.8); 
+  
   width:600px; 
   padding:40px;
   box-sizing:border-box;
@@ -29,7 +32,7 @@ body
 {
  color:#ffffff;
 font-size: 50px;
-border-bottom: 5px solid #0000CD;
+border-bottom: 5px solid #ffffff;
 margin-bottom: px; 
 } 
 .loginbox
@@ -48,29 +51,18 @@ textarea-color:#ffffff;
 colour:whiye; 
 padding:10px;
 } 
-input,select, textarea{
+input,select, textarea{ 
+border: 2px solid #ffffff;
 color:#ffffff;}
 .loginbox i
 { width:10px;
 padding:2px;
    } 
-.btn
+.btn1
 {width:100%; 
 
  
- background:#0000CD;
-border: 2px solid #ffffff;
-color:#ffffff;
-cursor:pointer;
-padding:10px;  
-border-radius: 20px;
-
-}
-.btn0
-{
-
  
- background:#0000CD;
 border: 2px solid #ffffff;
 color:#ffffff;
 cursor:pointer;
@@ -78,3 +70,4 @@ padding:10px;
 border-radius: 20px;
 
 }
+

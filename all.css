@@ -13,16 +13,15 @@ background-size:cover;
 }
 .box h1{
 color:#ffffff;}
-.btn
+.btn1
 {
 
 
 width:100%; 
- background:#0000CD;
+ 
 border: 2px solid #ffffff;
-color:#ffffff;
+
 cursor:pointer;
-padding:12px;  
-border-radius: 14px;
+
 
 }

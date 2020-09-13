@@ -1,49 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login page </title> 
-<link rel="stylesheet" href="login.css">  
-<script> 
-function valid()
-{ 
-  var username = document.getElementById("uname");
-  var password = document.getElementById("pswd"); 
-   
- if(uname.value.trim()=="")
-{
-  alert("username is invalid "); 
-  username.style.border="solid 4px red";
-  document.getElementById("luname").style.visibility="visible";  
-  return false;
-}  
-else if(password.value.trim()=="")
-{
-  alert("password  is invalid ") ;
-  pswd.style.border="solid 4px red";
-  document.getElementById("lpswd").style.visibility="visible";  
-  return false;
-}  
-else
-{
- alert(" Login Successful ");
-  return true;}  
-}   
-</script>
+<title>index</title>  
+ <meta charset="UTF-8"> 
+<meta name-="viewpoint"  content="width=device-width,initial-scale=1.0">  
+<link rel="stylesheet" href="css/bootstrap.min.css"> 
+<script src="js/jquery-3.5.1.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="home.css">
 </head>
-<body>
-<div class="box">
-<h1>Sign In</h1><div class="loginbox">
-<form onsubmit="return valid();"   action="home.html" >
-<br/><lable>Username</lable>
-<br/><i class="fa fa-user" aria-hidden="true"></i><input id="uname" type="text"  ><lable id="luname" style="color:red; visibility:hidden;"/>invalid</lable></div>
-<br/><div class="loginbox"><lable>Password</lable>
-<br/><i class="fa fa-lock" aria-hidden="true"></i><input id="pswd" type="password" > <lable id="lpswd" style="color:red; visibility:hidden;"/>invalid</lable></div>
-<br/><input class="btn" type="submit" value="Sign Up">
+
+<body> <div class="container">
+<div class="welcome"><br/>  
+<h1 class="text-center">welcome</h1>  <br/> 
+
+<hr></div> 
+<div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+<ul class="nav nav-pills">
+    <li class="nav-item ">
+      <a class="nav-link active" href="#">remote</a>
+    </li>
+    <li class="nav-item dropdown ">
+      <a class="nav-link dropdown-toggle btn btn-primary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Date posted</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">last 24 hours</a>
+        <a class="dropdown-item" href="#"> last 3 days</a>
+        <a class="dropdown-item" href="#">last 7 days</a>
+      
+    </li> 
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle btn btn-primary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Job Category</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Technology</a>
+          <a class="dropdown-item" href="#"> sales& Retail</a>
+          <a class="dropdown-item" href="#">Tranportation</a>
+        
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle btn btn-primary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Education Level</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Full-Time</a>
+          <a class="dropdown-item" href="#"> Part-Time</a>
+          <a class="dropdown-item" href="#">internship</a>
+        
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle btn btn-primary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Job Type</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Bachelor's degree</a>
+          <a class="dropdown-item" href="#"> diploma degree</a>
+          <a class="dropdown-item" href="#">12th pass</a> 
+        
+    
+  </ul>  
+  
 <br/>
-<a href="" target="_blank">Don't have an account?Sign Up</a>
-<br/><a href="" target="_blank">Forgot Your Password?</a>
-</form><div>
-</body>
-</html>
+
+ <a href="login.html" targer="_blank" ><input class="btn0" type="button" value="sign in "  ></a>
+<br/>
+<br/>
+ <a href="Serch Job.html" targer="_blank" ><input class="btn1" type="button" value="Find Jobs" ></a>
+
+ <br/><br/>
+<h2  style="font-size:50px;">New  Jobs</h2>
+<br/>
+<hr>
+<b>Experienced web Desidner(Remote working)</b>
+<br/>azym Technologis 
+<br/>slaray-20,000-35,000 per month
+<br/>Alleppey,kerala 
+<br/>30+day ago   
+<div class="text-center" >
+
+<input class="btn b1" type="button" value="view" >&nbsp;&nbsp;<input class="btn b1" type="button" value="Apply" ></div>
+<hr>
+<b>SAP hybris Ecommerce(UI EXpert)-Business Process</b>
+<br/>colgate-palmolive<br/>slaray-10,000-35,000 per month
+<br/>Mumbai,Mharashtra
+<br/>30+day ago
+<div class="text-center" >
+<input class="btn b1" type="button" value="view" >&nbsp;&nbsp;<input class="btn b1" type="button" value="Apply" ></div>
+<hr><b>Top Vacancy For Passanger Service Staff Fresher </b>
+<br/>Smart india Pvt Ltd<br/>slaray-30,000-45,000 per month
+<br/>Kangra,Himachal pradesh
+<br>1 day ago 
+<div class="text-center" >
+<input class="btn b1" type="button" value="view" >&nbsp;&nbsp;<input class="btn b1" type="button" value="Apply" ></div>
+<hr><b> Software devloper python </b>
+<br/>keywordio<br/>slaray-20,000-25,000 per month
+<br/>pune,Mharashtra 
+<br/>Today  
+<div class="text-center" >
+<input class="btn b1" type="button" value="view" >&nbsp;&nbsp;<input class="btn b1" type="button" value="Apply" ></div>
+<hr><b> Contant Devloper </b>
+<br/>PrepLadder Pvt.Ltd<br/>slaray-40,000-65,000 per month
+<br/>chandigarh,Chandigarh ,temporarily remote
+<br/> Today
+<div class="text-center" >
+<input class="btn b1" type="button" value="view" >&nbsp;&nbsp;<input class="btn b1" type="button" value="Apply" ></div>
+<hr>
+<br/><br/><br/>
+
+
+ <a href="Ragistration.html" targer="_blank" ><input class="btn2" type="button" value="Create Account" ></a> 
+<h3 class="text-center"> For employers </h3>
+<h4 class="text-center"> your next hire is here </h4> 
+
+ <a href="Employer.html" targer="_blank" ><input class="btn3" type="button" value="Post job" ></a> <br/><br/><br/> 
+<a href="all user.html"><input class="btn b1" type="button" value="All user" ></a>&nbsp;&nbsp;<a href="view and delete job.html"><input class="btn b1" type="button" value="delete jobs" ></a>
+
+ <div class="text-center"><a href="" targer="_blank" >Help Centre</a></div>  
+
+ <div class="text-center"><a href="" targer="_blank" >Privacy-Centre-Cookies,Privacy and term</a></div>  </div>  
+
+ </body>
+ </html>
+
 
 
